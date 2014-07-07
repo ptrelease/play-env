@@ -14,7 +14,7 @@ class AppTestCase(unittest.TestCase):
 
     def test_hello_world(self):
         rv = self.app.get('/')
-        assert 'Hello World' in rv.data
+        assert 'Hello Paul!' in rv.data
 
 if __name__ == '__main__':
     unittest.main()
