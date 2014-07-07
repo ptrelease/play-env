@@ -14,8 +14,9 @@ sudo apt-get update
 sudo apt-get install -y python-dev
 #install pip
 sudo apt-get install -y python-pip
-#install flask
-sudo pip install flask
+#sudo pip install flask, moved to a requirements file
+sudo pip install -r /vagrant/requirements.txt
+python /vagrant/app.py
 
 #Run the app
 #python /vagrant/app.py
